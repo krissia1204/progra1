@@ -128,6 +128,7 @@ public class Algoritmos{
                        System.out.println("Digite el número que desea buscar dentro del arreglo: ");
                         num= sc.nextInt();
                         int high= arr.length -1;
+                        //primero ordenamos el arreglo, binary search solo funciona en arreglos ordenados.
                         agrt.bubbleSort(arr);
                         result= agrt.binarySearch(arr, 0, high, num);
                         if (result == -1){
